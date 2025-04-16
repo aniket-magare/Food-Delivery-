@@ -1,0 +1,73 @@
+.footer{
+    color: #d9d9d9;
+    background-color: #323233;
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 8vw;
+      
+    padding-top: 80px   ;
+    margin-top: 100px;
+}
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+    gap: 80px;
+    
+}
+
+.footer-content-left, .footer-content-centre, .footer-content-right{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px ;
+}
+
+
+.footer-content-left li ,  .footer-content-right li{  /* cannot add centre as the changes isn't applied*/
+   list-style: none;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+.footer-content-centre ul {
+    list-style: none; /* Removes default list markers like bullets */
+    padding: 0; /* Resets any padding */
+    margin: 0; /* Resets any margin */
+}
+
+.footer-content-centre li {
+    margin: 0; /* Ensures no extra spacing between list items */
+    padding: 0; /* Resets padding for list items */
+    cursor: pointer;
+}
+
+.footer-content-centre h2 ,  .footer-content-right h2{
+    color: white;
+ }
+
+.footer-social-icon img{
+    width: 40px;
+    margin-right: 15px ;
+    cursor: pointer;
+}
+
+.footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: grey;
+    border: none;
+}
+@media (max-width:750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
