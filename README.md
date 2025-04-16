@@ -1,2 +1,2 @@
 # Food-Delivery-
-This is project of food delivery webiste.
+This is project of food delivery website.
