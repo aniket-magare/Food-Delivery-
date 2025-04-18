@@ -34,4 +34,4 @@ app.listen(port,()=>{
     
 })
 
-//mongodb+srv://aniketmagare8609:<db_password>@cluster0.y6dklfx.mongodb.net/? // mongo db link 
+//add your mangodb atlas cluster her // mongo db link 
