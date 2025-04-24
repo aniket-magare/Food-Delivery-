@@ -3,6 +3,7 @@ import './Add.css'
 import { assets } from '../../assets/assets'
 import { useState } from 'react';
 import axios, { Axios } from "axios"
+import { toast } from 'react-toastify';
 
 const Add = () => {
     const url = "http://localhost:4000";
@@ -40,10 +41,11 @@ const Add = () => {
           category: "Salad"   // default category set to salad
       });
       setImage(false)
+      toast.success(response.data.message)
       
       }
       else {
-
+          toast.error(response.data.message)
       }
     }
     
