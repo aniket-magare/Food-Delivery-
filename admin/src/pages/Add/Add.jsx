@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 const Add = ({url}) => {
   
 
-    const [image,setImage] = useState(false);
+    const [image,setImage] = useState(null);
     const [data,setData] = useState({
         name: "",
         description: "",
@@ -48,7 +48,7 @@ const Add = ({url}) => {
           toast.error(response.data.message)
       }
     }
-    
+     
 
   return (
     <div className='add'>
@@ -74,9 +74,9 @@ const Add = ({url}) => {
             <select name="category" value={data.category} onChange={onChangeHandler}>
               <option value="Salad">Salad</option>
               <option value="Rolls">Rolls</option>
-              <option value="Desert">Desert</option>Noddles
+              <option value="Desert">Desert</option>
               <option value="Sandwich">Sandwich</option>
-              <option value="CakePure Veg">CakePure Veg</option>
+              <option value="Cake">Cake</option>
               <option value="Pure Veg">Pure Veg</option>
               <option value="Pasta">Pasta</option>
               <option value="Noddles">Noddles</option>
@@ -84,7 +84,7 @@ const Add = ({url}) => {
           </div>
           <div className="add-price flex-col">
             <p>Product price</p>
-            <input onChange={onChangeHandler} value={data.price} type="Number " name='price' placeholder='$20' />
+            <input onChange={onChangeHandler} value={data.price} type="number " name='price' placeholder='12' />
           </div>
         </div>
       <button type='submit' className='add-button'>Add</button>
